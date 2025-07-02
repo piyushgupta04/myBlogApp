@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/lastEdit.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="top">
+        <h1>MyBlogge</h1>
+        <div class="in-box">
+            <a id="signup" href="blogs/new">
+                Create a blog
+            </a>
+            <span id="hamburgur"><a href="blogs/new">Create</a></span>
+        </div>
+    </div>
+    <div id="blogs">
+        <% for (let post of data){ %>
+            <div class="blog-box">
+            <div class="post-wrapper">
+                <div class="head">
+                    <h3><%= post.heading %></h3>
+                    <span>by <b class="username"><i><%= post.username %></i></b></span>
+                </div>
+                <span class="blur"><%= post.date %></span>
+            </div>
+            <div class="content">
+                <%= post.content %>
+            </div>
+            <div class="redirects">
+                <div class="wrapper">
+                    <a href="/blogs/<%= post.uid %>/view">Read more</a>
+                    <a href="/blogs/<%= post.uid %>/edit">Edit post</a>
+                </div>
+                <form method="post" action="/blogs/<%= post.uid %>/delete?_method=DELETE">
+                    <button id="delBtn">Delete post</button>
+                </form>
+            </div>
+        </div>
+       <% } %>
+    </div>
+    <div class="action-block">
+    </div>
+</body>
+</html>

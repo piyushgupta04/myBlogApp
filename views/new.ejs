@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include("includes/html-link.ejs") %>
+    <title>Create</title>
+</head>
+<body>
+    <div class="top">
+        <h1>Create Blog</h1>
+        <a href="/blogs"><i class="fa-solid fa-house"></i></a>  
+    </div>
+    <div id="blogs">
+        <form method="post" action="/blogs">
+            <label for="u-name">Title</label>
+            <input required autocomplete="on" type="text" name="title" id="u-name">
+            <label for="content">Write your blog here</label>
+            <textarea required id="content" rows="7" name="content"></textarea>
+            <label for="author" >Enter the name of the Author</label>
+            <input type="text" id="author" required autocomplete="on" name="username">
+            <div class="action-block">
+            <button>Create</button>
+            <a href="/blogs">Cancel</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

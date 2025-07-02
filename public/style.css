@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Pridi:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#hamburgur {
+     display: none;
+}
+#hamburgur a:hover {
+    color: #2b2d42;
+}
+
+body{
+    font-family: "EB Garamond", serif;
+}
+
+.top{
+    background-color: #2b2d42;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 13px 0 13px;
+}
+
+.top h1 {
+    color: #edf2f4;
+    font-family: "Pridi", serif;
+}
+
+
+
+.in-box a {
+    all: unset;
+    color: #edf2f4;
+    font-size: 25px;
+}
+
+.in-box {
+    display: flex;
+    gap: 17px;
+    box-sizing: border-box;
+}
+
+.fa-house{
+    padding: 4px;
+    color: #edf2f4;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all .2s ease;
+    display: none;
+}
+
+.fa-house:hover{
+    color: #2b2d42;
+    background-color: #d1d5db;
+}
+
+#signup:hover, #login:hover, #hamburgur:hover{
+    background-color: #edf2f4;
+    color: #2b2d42;
+    transition: all .3s ease-out;
+}
+
+#login, #signup, #hamburgur{
+    padding: 3px 5px 3px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+}
+
+.post-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-box{
+    /* max-width: 70vw; */
+    padding: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    /* background-color: #edf2f4; */
+    margin-bottom: 15px;
+    color: #2b2d42;
+    /* border: 2px solid #2b2d42; */
+    box-shadow: #2b2d42 0 0 5px 0;
+}
+.content {
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.redirects a{
+    all: unset;
+    margin-right: 7px;
+    color: #2b2d42;
+    box-sizing: border-box;
+    padding: 2px 5px 2px 5px;
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.redirects a:hover{
+    background-color: #2b2d42;
+    color: #edf2f4;
+}
+
+#blogs{
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.head h3 {
+    color: #2b2d42;
+}
+
+.blur{
+    opacity: 0.8;
+}
+
+.username{
+    font-size: 19px;
+}
+
+#editor{
+    padding: 7px;
+    box-sizing: border-box;
+    resize: vertical;
+    border-radius: 10px;
+    border-color: #2b2d42;
+}
+
+.action-block {
+    display: flex;
+    gap: 15px;
+}
+
+.action-block button{
+    all: unset;
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px solid #2b2d42;
+    color: #2b2d42;
+    padding: 7px;
+    border-radius: 7px;
+    
+    transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.action-block button:hover{
+    box-shadow: 0 0 10px 0 #2b2d42;
+}
+
+
+.action-block a {
+    font-weight: 600;
+    font-size: 21px;
+    border: 2px solid #2b2d42;
+    background-color: #2b2d42;
+    color: #edf2f4;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.action-block a:hover{
+    box-shadow: 0 0 12px 0 #2b2d42;
+}
+form label{
+    display: block;
+    font-size: 21px;
+}
+
+form textarea {
+    resize: vertical;
+    width: 100%;
+}
+form input, textarea {
+    margin-bottom: 20px;
+    font-family: "EB Garamond", serif;
+    font-size: 18px;
+}
+@media screen and (max-width: 450px) {
+
+    #editor{
+        width: 100%;
+    }
+
+    #signup,  #login, .blur{
+        display: none;
+    }
+
+    #hamburgur{
+        display: inline-block;
+    }
+}
+/* agar width 450 se kam hoti ha to date wale ko hide karna ha + login/signup wale div ko bhi hide karna ha! */
+

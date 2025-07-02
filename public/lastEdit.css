@@ -1,0 +1,40 @@
+.redirects {
+    display: flex;
+    justify-content: space-between;
+}
+
+#delBtn {
+    margin-right: 5px;
+    all: unset;   
+    font-weight: 600;
+    font-size: 16px;
+    border: 2px solid #2b2d42;
+    color: #2b2d42;
+    padding: 4px;
+    border-radius: 7px;transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#delBtn:hover{
+    box-shadow: 0 0 14px 0 #b14343;
+}
+
+.action-block a {
+    font-weight: 600;
+    font-size: 21px;
+    border: 2px solid #2b2d42;
+    background-color: #2b2d42;
+    color: #edf2f4;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .2s cubic-bezier(0.19, 1, 0.22, 1);
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+.action-block a:hover{
+    box-shadow: 0 0 12px 0 #2b2d42;
+}
+

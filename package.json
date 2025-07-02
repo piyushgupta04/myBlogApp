@@ -1,0 +1,21 @@
+{
+  "name": "myblogapp",
+  "version": "1.0.0",
+  "description": "A simple blogging app made with express and restful apis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "makeDir": "mkdir views && mkdir public && touch index.js"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "method-override": "^3.0.0",
+    "uuid": "^11.1.0"
+  },
+  "keywords": [],
+  "author": "Piyush Gupta",
+  "license": "ISC",
+  "type": "commonjs"
+}
